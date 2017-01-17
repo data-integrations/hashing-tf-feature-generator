@@ -168,7 +168,7 @@ public class HashingTFFeatureGenerator extends SparkCompute<StructuredRecord, St
         return map;
       } catch (IllegalArgumentException e) {
         throw new IllegalArgumentException(
-          String.format("Invalid output column mapping %s. Please provide a valid output column mapping which can be" +
+          String.format("Invalid output column mapping %s. Please provide a valid output column mapping which can be " +
                           "used to store the generated sparse vector. 'outputColumnMapping' should be in the format " +
                           "'input-column':'transformed-output-column'. %s.", outputColumnMapping,
                         e.getMessage()), e);
