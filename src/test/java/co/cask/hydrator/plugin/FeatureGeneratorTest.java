@@ -43,6 +43,7 @@ import org.apache.spark.mllib.linalg.SparseVector;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.ClassRule;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.List;
@@ -71,6 +72,7 @@ public class FeatureGeneratorTest extends HydratorTestBase {
                       HashingTFFeatureGenerator.class);
   }
 
+  @Ignore
   @Test
   public void testHashingTFFeatureGenerator() throws Exception {
     String source = "hashing-tf-generator-source";
