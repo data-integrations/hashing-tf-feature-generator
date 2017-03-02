@@ -28,7 +28,6 @@ public class FeatureGeneratorConfigTest {
   private static final Schema INPUT = Schema.recordOf("input", Schema.Field.of("offset", Schema.of(Schema.Type.INT)),
                                                       Schema.Field.of("body", Schema.of(Schema.Type.INT)));
 
-  @Ignore
   @Test
   public void testInvalidInputTypeHashingTFFeatureGenerator() {
     HashingTFFeatureGenerator featureGenerator = new HashingTFFeatureGenerator(new HashingTFFeatureGenerator
@@ -42,7 +41,6 @@ public class FeatureGeneratorConfigTest {
     }
   }
 
-  @Ignore
   @Test
   public void testInvalidInputHashingTFFeatureGenerator() {
     HashingTFFeatureGenerator featureGenerator = new HashingTFFeatureGenerator(new HashingTFFeatureGenerator
@@ -57,7 +55,6 @@ public class FeatureGeneratorConfigTest {
     }
   }
 
-  @Ignore
   @Test
   public void testInvalidInputSkipGramTrainer() {
     HashingTFFeatureGenerator featureGenerator = new HashingTFFeatureGenerator(new HashingTFFeatureGenerator
