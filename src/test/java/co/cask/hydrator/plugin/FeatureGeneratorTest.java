@@ -72,6 +72,7 @@ public class FeatureGeneratorTest extends HydratorTestBase {
                       HashingTFFeatureGenerator.class);
   }
 
+  @Ignore
   @Test
   public void testHashingTFFeatureGenerator() throws Exception {
     String source = "hashing-tf-generator-source";
